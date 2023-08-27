@@ -64,21 +64,24 @@ func getBits(v interface{}) int {
 }
 
 func main() {
-	var (
-		in8  int8 =1
-		in16 int16 = 1
-		in32 int32 = 1
-		in64 int64 = 1
-	)
+	// var (
+	// 	in8  int8 =1
+	// 	in16 int16 = 1
+	// 	in32 int32 = 1
+	// 	in64 int64 = 1
+	// )
 
-	fmt.Println(getIntMaxValue(in8, in16, in32, in64))
+	// fmt.Println(getIntMaxValue(in8, in16, in32, in64))
 
-	var (
-		uin8  uint8 =1
-		uin16 uint16 = 1
-		uin32 uint32 = 1
-		uin64 uint64 = 1
-	)
+	// var (
+	// 	uin8  uint8 =1
+	// 	uin16 uint16 = 1
+	// 	uin32 uint32 = 1
+	// 	uin64 uint64 = 1
+	// )
 
-	fmt.Println(getUintMaxValue(uin8, uin16, uin32, uin64))
+	// fmt.Println(getUintMaxValue(uin8, uin16, uin32, uin64))
+
+	var a int
+	fmt.Println(getBits(a))
 }
