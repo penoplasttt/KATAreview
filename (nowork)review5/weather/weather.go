@@ -21,7 +21,7 @@ type Forecast struct {
 	Wind        string `json:"wind"`
 }
 
-func (w Weather)GetWeather(data []byte) (Weather, error) {
+func GetWeather(data []byte) (Weather, error) {
 	var weather Weather
 	err := json.Unmarshal(data, &weather)
 	if err != nil {
