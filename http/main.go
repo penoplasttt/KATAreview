@@ -24,7 +24,8 @@ type Profile struct {
 }
 
 func main() {
-	
+	http.HandleFunc("/api/v1/users", UsersHandler)
+	http.ListenAndServe(":8080",nil)
 }
 
 func UsersHandler (w http.ResponseWriter, r *http.Request) {
